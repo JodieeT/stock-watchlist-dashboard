@@ -71,10 +71,10 @@ export const fetchHistoricalData = async (symbol, resolution = 'D', days = 7) =>
 };
 
 export const fetchIntradayData = async (symbol) => {
-  return fetchHistoricalData(symbol, 'D', 1);
+  return fetchHistoricalData(symbol, 'D', 7);
 };
 
 export const fetchWeeklyData = async (symbol) => {
-  return fetchHistoricalData(symbol, 'D', 7);
+  return fetchHistoricalData(symbol, 'D', 30);
 };
 
